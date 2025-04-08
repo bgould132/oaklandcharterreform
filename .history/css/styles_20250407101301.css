@@ -804,12 +804,4 @@ footer {
 
 .member-photo img[src*="Ben Gould"] {
     object-position: top center;
-}
-
-.about-header {
-    margin-bottom: 0;
-}
-
-.about-header h1 {
-    font-size: 3.5rem;
 } 
