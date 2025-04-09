@@ -8,89 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        /* Custom styles for this page */
-        .org-chart-container {
-            text-align: center;
-            margin: 2rem auto;
-        }
-        
-        .org-chart-container img {
-            max-width: 80%;
-            height: auto;
-            margin: 0 auto;
-            display: block;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin: 3rem 0 2rem;
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: "";
-            display: block;
-            width: 80px;
-            height: 3px;
-            background-color: #0057b8;
-            margin: 10px auto 0;
-        }
-        
-        .pros-cons-container {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .pros-cons-item {
-            background: #f9f9f9;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .pros-cons-icon {
-            display: block;
-            margin: 0 auto 1rem;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            border-radius: 50%;
-            text-align: center;
-        }
-        
-        .pros-icon {
-            background-color: #0057b8;
-            color: white;
-        }
-        
-        .cons-icon {
-            background-color: #0057b8;
-            color: white;
-        }
-        
-        .pros-cons-item h3 {
-            margin-top: 0.5rem;
-        }
-        
-        .pros-cons-item ul {
-            text-align: left;
-            list-style-type: none;
-            padding-left: 0;
-        }
-        
-        .pros-cons-item ul li {
-            margin-bottom: 0.5rem;
-            padding-left: 0;
-        }
-        
-        .back-button-container {
-            text-align: center;
-            margin: 3rem 0;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -132,9 +49,9 @@
                 <div class="section-content">
                     <p>The <strong>council-manager</strong> form of government is used in many cities and municipalities, combining <strong>democratic leadership</strong> with <strong>professional management</strong>. It is designed to promote efficiency and reduce political influence in administrative decisions.</p>
                     
-                    <h2 class="section-title">Org Chart for a Typical Council-Manager Government:</h2>
-                    <div class="org-chart-container">
-                        <img src="images/council-manager-org-chart.png" alt="Organizational Chart of a Council-Manager Government">
+                    <h2>Org Chart for a Typical Council-Manager Government:</h2>
+                    <div class="image-container">
+                        <img src="images/council-manager-org-chart.png" alt="Organizational Chart of a Council-Manager Government" class="feature-image">
                     </div>
                 </div>
             </div>
@@ -194,39 +111,44 @@
         <!-- Pros & Cons Section -->
         <section class="section" aria-labelledby="pros-cons-heading">
             <div class="container">
-                <h2 id="pros-cons-heading" class="section-title">Pros & Cons of the Council-Manager System:</h2>
+                <h2 id="pros-cons-heading">Pros & Cons of the Council-Manager System:</h2>
                 
-                <div class="pros-cons-container">
-                    <div class="pros-cons-item">
-                        <div class="pros-cons-icon pros-icon">
-                            <i class="fas fa-check"></i>
+                <div class="section-content">
+                    <div class="two-column-grid">
+                        <div class="column-item">
+                            <div class="principle-card">
+                                <div class="principle-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h3>Pros:</h3>
+                                <ul>
+                                    <li>Promotes <strong>professionalism, competence,</strong> and <strong>efficiency</strong>.</li>
+                                    <li>Studies show that <strong>Council-Manager governments are more transparent, responsive, efficient, and effective.</strong></li>
+                                    <li><strong>Reduces political corruption</strong> by keeping administration non-partisan.</li>
+                                    <li>Encourages <strong>long-term planning</strong> rather than short-term political gains.</li>
+                                    <li><strong>More flexible</strong> — city managers can be replaced if performance is poor.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <h3>Pros:</h3>
-                        <ul>
-                            <li>Promotes <strong>professionalism, competence,</strong> and <strong>efficiency</strong>.</li>
-                            <li>Studies show that <strong>Council-Manager governments are more transparent, responsive, efficient, and effective.</strong></li>
-                            <li><strong>Reduces political corruption</strong> by keeping administration non-partisan.</li>
-                            <li>Encourages <strong>long-term planning</strong> rather than short-term political gains.</li>
-                            <li><strong>More flexible</strong> — city managers can be replaced if performance is poor.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="pros-cons-item">
-                        <div class="pros-cons-icon cons-icon">
-                            <i class="fas fa-exclamation"></i>
+                        <div class="column-item">
+                            <div class="principle-card">
+                                <div class="principle-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h3>Cons:</h3>
+                                <ul>
+                                    <li><strong>Less voter control over executive decisions</strong>.</li>
+                                    <li><strong>Less visible mayor sometimes leads to lower voter turnout.</strong></li>
+                                    <li><strong>The mayor has less power than voters often assume.</strong></li>
+                                    <li>The system relies heavily on the <strong>competence of the city manager</strong>.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <h3>Cons:</h3>
-                        <ul>
-                            <li><strong>Less voter control over executive decisions</strong>.</li>
-                            <li><strong>Less visible mayor sometimes leads to lower voter turnout.</strong></li>
-                            <li><strong>The mayor has less power than voters often assume.</strong></li>
-                            <li>The system relies heavily on the <strong>competence of the city manager</strong>.</li>
-                        </ul>
                     </div>
                 </div>
                 
-                <div class="back-button-container">
-                    <a href="index.html#proposed-amendments" class="cta-button">BACK TO PROPOSED AMENDMENTS</a>
+                <div class="buttons-container">
+                    <a href="index.html#proposed-amendments" class="cta-button">Back to Proposed Amendments</a>
                 </div>
             </div>
         </section>
