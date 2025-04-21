@@ -31,6 +31,9 @@ npm-debug.log*
 .env.test.local
 .env.production.local
 
+#history
+.history
+
 # Optional tools and build directories
 /.sass-cache
 /connect.lock

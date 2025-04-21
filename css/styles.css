@@ -184,6 +184,11 @@ nav {
     color: var(--light-text);
     width: 80%;
     max-width: 800px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.45); /* subtle background for text */
+    border-radius: 1rem;
+    padding: 2.5rem 2rem 2rem 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
 }
 
 .hero-content h1 {
@@ -215,6 +220,10 @@ nav {
     color: var(--light-text);
     transform: translateY(-2px);
     box-shadow: var(--box-shadow);
+}
+
+.hero-buttons {
+    gap: 2rem;
 }
 
 /* Section Styling */
@@ -516,6 +525,7 @@ footer {
 @media (max-width: 576px) {
     .hero-content h1 {
         font-size: 1.8rem;
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
     }
     
     .tagline {
@@ -814,3 +824,20 @@ footer {
 .about-header h1 {
     font-size: 3.5rem;
 } 
+
+.cta-button.cta-button--white {
+    background: #fff;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    text-transform: uppercase;
+}
+.cta-button.cta-button--white:hover, .cta-button.cta-button--white:focus {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    outline: none;
+}
+
+/* Keep default .cta-button for Sign Up (blue background, white text) */
