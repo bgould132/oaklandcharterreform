@@ -38,9 +38,12 @@
         <section class="hero" aria-labelledby="hero-heading">
             <div class="hero-image">
                 <picture>
-                    <!-- Smaller image for mobile -->
+                    <!-- WebP sources for faster loading -->
+                    <source type="image/webp" srcset="images/Downtown/IMG_7632.webp" media="(max-width: 768px)">
+                    <source type="image/webp" srcset="images/Downtown/IMG_7632.webp">
+                    <!-- Smaller image for mobile fallback -->
                     <source srcset="images/Downtown/IMG_7632.jpg" media="(max-width: 768px)">
-                    <!-- Larger image for desktop -->
+                    <!-- Larger image for desktop fallback -->
                     <img src="images/Downtown/IMG_7632.jpg" alt="Downtown Oakland skyline view">
                 </picture>
                 <div class="hero-content">
@@ -118,6 +121,33 @@
             </div>
         </section>
 
+        <!-- InBriefs Section -->
+        <section id="inbriefs" class="section alt-bg" aria-labelledby="inbriefs-heading">
+            <div class="container">
+                <h2 id="inbriefs-heading">InBrief Series: Understanding Oakland's Charter</h2>
+                <div class="inbrief-list">
+                    <div class="inbrief-card">
+                        <h3>InBrief #1: Oakland's Charter Doesn't Work. Here's Why.</h3>
+                        <p>
+                            Oakland's Federal-style charter creates a weak mayor, frustrated council, conflicted city attorney, and a revolving door of leadership. This system, designed for checks and balances at the national level, leads to inefficiency and lack of accountability at the city level. <a href="files/InBrief_1.pdf" target="_blank">Read the full InBrief (PDF)</a>
+                        </p>
+                    </div>
+                    <div class="inbrief-card">
+                        <h3>InBrief #2: How Other California Cities Are Organized – and Why</h3>
+                        <p>
+                            Most California cities use a unitary council–manager system, which is more efficient and accountable. Case studies from San Jose, Long Beach, and Sacramento show why this model works and how it addresses common critiques. <a href="files/InBrief_2.pdf" target="_blank">Read the full InBrief (PDF)</a>
+                        </p>
+                    </div>
+                    <div class="inbrief-card">
+                        <h3>InBrief #3: A Plan for Oakland – A Unitary Strong-Mayor System</h3>
+                        <p>
+                            We propose a Unitary Strong-Mayor system for Oakland, blending the best of council-manager and strong-mayor models. This would empower the mayor, clarify council and attorney roles, and bring stability to city management. <a href="files/InBrief_3.pdf" target="_blank">Read the full InBrief (PDF)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Our Approach Section -->
         <section id="our-approach" class="section" aria-labelledby="approach-heading">
             <div class="container">
@@ -134,7 +164,7 @@
                             <li>Gathered community feedback on social media</li>
                         </ul>
                         
-                        <p>With this feedback, <b>we have decided to gather signatures for a charter amendment to move Oakland to a Council-Manager form of government</b>, aiming to put the measure before the voters in June 2026.</p>
+                        <p>With this feedback, <b>we are partnering with Mayor Lee and the City Council to advance a charter amendment through a task-force process</b>, with the goal of placing the measure before voters in June 2026.</p>
                         <p>Why June? Because settling matters about the City's organization in advance of the November 2026 mayoral election will allow candidates to run for a clearly defined role in the new system.</p>
                     </div>
                     <div class="timeline">
@@ -149,20 +179,27 @@
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <h3>April - June 2025</h3>
-                                <p>Draft charter amendments and community feedback</p>
+                                <p>Community engagement and broader outreach</p>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
                                 <h3>July - December 2025</h3>
-                                <p>Gather signatures to place on ballot</p>
+                                <p>Work with Mayor & Council on task force</p>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content">
-                                <h3>January - May 2026</h3>
+                                <h3>February 2026</h3>
+                                <p>Council places measure on ballot</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>March - June 2026</h3>
                                 <p>Organize grassroots campaign</p>
                             </div>
                         </div>
@@ -174,6 +211,7 @@
                             </div>
                         </div>
                     </div>
+                    <p>If the Council does not place the measure on the ballot in February, we plan to launch a signature drive to qualify the measure for the November 2026 election.</p>
                 </div>
             </div>
         </section>
@@ -187,22 +225,23 @@
                         <p>Based on extensive research, stakeholder input, and the guidance of the <a href="https://www.nationalcivicleague.org/model-city-charter-9th-edition/">National Civic League's Model City Charter</a>, we are proposing the following potential amendments to the Oakland City Charter:</p>
                         
                         <div class="amendment-card">
-                            <h3>Council-Manager Form of Government</h3>
-                            <p>Oakland's current hybrid governance structure has created confusion about who is responsible for what. Based on best practices from the National Civic League, we propose:</p>
+                            <h3>Unitary Strong-Mayor System</h3>
+                            <p>We propose a modern "best-of-both" model that pairs a visible, city-wide elected Mayor with a professional City Administrator.  The Mayor leads and sets policy; the Administrator runs day-to-day services.  Clear roles mean faster action, less finger-pointing and better results for Oaklanders.</p>
                             <ul class="amendment-list">
-                                <li><strong>A Unitary System:</strong> All powers of the city would be vested in a popularly elected council, which appoints a professional manager who is continuously responsible to and removable by the council.</li>
-                                <li><strong>Stronger Political Leadership:</strong> The mayor would serve as chief legislator and leader of the policy-making team, focused on facilitative leadership rather than administrative details.</li>
-                                <li><strong>Professional Management:</strong> A qualified city administrator would handle day-to-day operations, provide professional expertise, and ensure effective implementation of council-approved policies.</li>
+                                <li><strong>One Government, One Leader:</strong> The Mayor chairs the City Council, helps set the agenda and can veto legislation—so everyone knows who's in charge and whom to hold accountable.</li>
+                                <li><strong>Professional Management:</strong> The City Council - led by the Mayor - hires a proven, non-political City Administrator who keeps City Hall running smoothly no matter who is in elected office.</li>
+                                <li><strong>Shared Power, Clear Roles:</strong> The Mayor provides big-picture leadership, the Council passes laws and budgets,and the Administrator delivers results—ending today's confusion about "who does what."</li>
+                                <li><strong>Better Everyday Service:</strong> With clear authority and professional management, potholes get filled, budgets stay balanced and residents get answers faster.</li>
                             </ul>
                             <p>Learn more about the <a href="council-manager-government.html">Council-Manager form of government</a>.</p>
                         </div>
                         
                         <div class="amendment-card">
-                            <h3>City Attorney Appointment</h3>
-                            <p>Currently, Oakland's city attorney is independently elected, creating potential conflicts between serving voters' interests and the municipal corporation's needs. We propose:</p>
+                            <h3>One City Attorney—One Client</h3>
+                            <p>Under the Unitary Strong-Mayor structure, the City Attorney would be appointed by (and answer to) the Council, representing the municipal government as a single client.  This ends today's built-in conflict and provides clear, reliable legal guidance to both Mayor and Council.</p>
                             <ul class="amendment-list">
-                                <li>Changing to an appointed city attorney who is hired by and answers to the City Council</li>
-                                <li>Ensuring the city attorney views the City Council and City Administrator as their client</li>
+                                <li>Appointed by the City Council, not elected—so legal advice stays professional, not political.</li>
+                                <li>Serves the City as a whole, ensuring consistent, accountable counsel for both policy and operations.</li>
                             </ul>
                         </div>
                                                 
